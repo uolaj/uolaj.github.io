@@ -4,233 +4,206 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MARIA JOSEPHAN LOUISE M. ELI PASCUA - Web Developer</title>
+   <link rel="stylesheet" type="text/css" href="style.css">
     
-    <style>
-        body {
-            font-family: 'Century Gothic', Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        .header-image{
-        margin-top: -50px;
-        text-align: center;
-        margin-bottom: 20px;
-        position: relative; /* or position: absolute; */
-        z-index: 1; /
-        }
-
-        .header-image img {
-            width: 300px;
-            height: 300px;
-            border-radius: 50%;
-            object-fit: cover;
-
-
-        }
-
-        .banner header {
-         /*   background-color: #0074cc;*/
-         /*   color: #fff; */
-            text-align: center;
-        }
- .banner h1 {
-            margin: 0;
-            color: black;
-            font-family: 'Century Gothic', Arial, sans-serif;
-            text-align: center;
-        }
-
-        .banner {
-            background-image: url("https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80");
-            display: flex;
-            align-items: center;
-            justify-content: center; /* Center horizontally */
-            height: 200px;
-            position: relative;
-            background-size: cover;
-            background-position: center;
-            width: 100%;
-            text-align: center; /* Center text horizontally */
-        }
-
-        .banner nav {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            padding: 20px;
-        }
-
-        .banner nav ul {
-            display: flex;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-
-        }
-
-        .banner nav li {
-            margin-left: 20px;
-        }
-
-        .banner nav a {
-            color: black;
-            text-decoration: none;
-            font-size: 18px;
-            padding: 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        .banner nav a:hover {
-           /* background-color: #cce6ff;*/
-           background-color: burlywood;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: bisque;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h2 {
-            color: #0074cc;
-            font-family: 'Century Gothic', Arial, sans-serif;
-        }
-
-        p {
-            line-height: 1.6;
-            color: #333;
-        }
-
-        ul {
-            list-style-type: disc;
-            color: #333;
-        }
-
-        a {
-            color: #0074cc;
-            text-decoration: none;
-        }
-
-        /* Work Experience section */
-        .experience {
-            margin-top: 20px;
-        }
-
-        .experience h3 {
-            color: #0074cc;
-        }
-
-        .experience p {
-            font-style: italic;
-        }
-
-        /* Photo style */
-        .profile-photo {
-            max-width: 150px;
-            border-radius: 50%;
-            display: block;
-            margin: 0 auto 20px;
-        }
-
-        /* Styling for sections with hover effect */
-        .section-hover {
-            border: 2px solid black;
-            padding: 10px;
-            margin: 20px auto;
-            max-width: 90%;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-
-        .section-hover:hover {
-            background-color: #cce6ff;
-            cursor: pointer;
-            transform: scale(1.02); /* Slight scale increase on hover */
-        }
-    </style>
+    <!-- Add Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
+<!-- Add Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Add Bootstrap JavaScript (jQuery and Popper.js are required dependencies) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
 <body>
-    <div class="banner">
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#work-experience">Work Experience</a></li>
-                <li><a href="#contact-me">Contact Me</a></li>
-            </ul>
-        </nav>
+<style>
+    /* Style for the floating button */
+        /* Style for the floating heart-shaped button */
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            width: 50px;
+            height: 50px;
+            background-color: palevioletred; /* Red background for the heart */
+            color: #fff; /* White text color */
+            border-radius: 50%;
+            transform: rotate(-45deg); /* Rotate to form a heart shape */
+            cursor: pointer;
+            text-align: center;
+            line-height: 50px;
+        }
+ }
+</style>
+    <script>
+        // Prompt the user with a greeting
+        const userGreeting = prompt("Good day! To view my CV, please enter your name:");
+        if (userGreeting) {
+            alert(`Hello, ${userGreeting}! Welcome to my CV website.`);
+        }
 
-        
-            <h1>MARIA JOSEPHAN LOUISE M. ELI PASCUA</h1>
-       
-    </div>
+  // Add a scroll event listener to check if the user is at the bottom of the page
+        // Add a scroll event listener to check if the user is at the bottom of the page
+        window.addEventListener('scroll', function() {
+            const scrollY = window.scrollY;
+            const windowHeight = window.innerHeight;
+            const documentHeight = document.documentElement.scrollHeight;
+            const bottomOffset = documentHeight - (scrollY + windowHeight);
+            const scrollToTopButton = document.querySelector('.scroll-to-top');
 
-    <div class="header-image">
-        <img src="jalou.png" alt="Maria Josephan Louise">
-      </div>
-       
+            if (bottomOffset < 20) {
+                scrollToTopButton.style.display = 'block';
+            } else {
+                scrollToTopButton.style.display = 'none';
+            }
+        });
 
-    <div class="container">
-        <h2>About Me</h2>
-        <div class="section-hover">
-            <div id="Banner-text">
-                <h1>Good day! I'm <strong>Maria Josephan Louise</strong></h1>
-            </div>
-            <div class="about-me">
-                <p>
-                    <ul>
-                        <li>Birthday: April 12, 1992</li>
-                        <li>Sex: Female</li>
-                        <li>Address: San Jose, Malaybalay City, Bukidnon</li>
-                    </ul>
-                </p>
+        // Function to scroll to the top when the button is clicked
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+      
+
+   
+    </script>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-me">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work-experience">Work Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-me">Contact Me</a>
+                    </li>
+                </ul>
             </div>
         </div>
+    </nav>
+
+    <div class="banner">
+        <h1 class="text-center">MARIA JOSEPHAN LOUISE M. ELI PASCUA</h1>
+    </div>
+
+    <div class="container">
+        <div class="text-center">
+            <img src="jalou.png" alt="Maria Josephan Louise" class="profile-photo">
+            <h1>Good day! <br> I'm <strong>Jalou!</strong></h1>
+        </div>
+
+        <h2 id="about-me">About Me</h2>
+        <div class="section-hover">
+            <p>
+                <ul>
+                    <li>Fullname: Maria Josephan Louise Maandig-Eli Pascua </li>
+                    <li>Age: <span id="age"></span></li>
+                    <li>Status: Married</li>
+                    <li>Sex: Female</li>
+                    <li>Address: San Jose, Malaybalay City, Bukidnon</li>
+                    <li>CS Professional</li>
+                    
+                </ul>
+            </p>
+        </div>
+        <script>
+            // Calculate age based on birthdate
+            function calculateAge(birthDate) {
+                const today = new Date();
+                const birthDateObj = new Date(birthDate);
+                const age = today.getFullYear() - birthDateObj.getFullYear();
+                const monthDiff = today.getMonth() - birthDateObj.getMonth();
+        
+                if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDateObj.getDate())) {
+                    return age - 1;
+                }
+        
+                return age;
+            }
+        
+            // Display age under "About Me" section
+            const ageElement = document.getElementById('age');
+            const calculatedAge = calculateAge('1992-04-12'); // Your birthdate in YYYY-MM-DD format
+            ageElement.textContent = calculatedAge;
+        </script>
    
-        <h2>Skills</h2>
-        <div class="Skill section-hover" id="Skills">
-        <!-- Your Skills content here -->
-        <ul>
-            <b>IT Professional Skills:</b>
+        <h2 id="Skills">Skills</h2>
+        <div class="section-hover"> 
+            <!-- Your Skills content here -->
+            <ul>
+                <b>IT Professional Skills:</b>
                 <ul>
                     <li>Information Systems Management.</li>
                     <li>Database Management.</li>
-                    <li>Software Development.</li>
+                    <li>Web Development.</li>
                 </ul>
             
-            <b>Secretarial Skills:</b>
+                <b>Secretarial Skills:</b>
                 <ul>
                     <li>Administrative Support: Efficiently manages office operations and correspondence.</li>
                     <li>Records Keeping: Maintains accurate records and databases.</li>
                     <li>Communication: Excellent written and verbal communication skills.</li>
-            
-            </li>
-        </ul>
-</div>
-        <h2>Education</h2>
-        <div class="education section-hover" id="education">
-            <ul>
-                <li>Bachelor of Science in Information Technology</li>
-                <li>Taken up units of Masters in Public Technology</li>
+                </ul>
             </ul>
         </div>
 
-        <h2>Work Experience</h2>
-        <div class="experience section-hover" id="work-experience">
-            Secretary B, OGM - Malaybalay City Water District
+        <h2 id="education">Education</h2>
+        <div class="section-hover">
+            <ul>
+                
+                <li>Took up units of Masters in Public Administration - Bukidnon State University </li>
+                <li>Tertiary: Bachelor of Science in Information Technology - Bukidnon State University </li>
+                <li>Secondary: Bukidnon National High School - Bukidnon National High School </li>
+                <li>Primary: Malaybalay City Central School - Malaybalay City Central School </li>
+            </ul>
         </div>
 
-        <h2>Contact Information</h2>
-        <div class="contact-me section-hover" id="contact-me">
-            <p>Email: <a href="mailto:mjlsm.official@gmail.com">mjlsm.official@gmail.com</a></p>
+        <h2 id="work-experience">Work Experience</h2>
+        <div class="section-hover">
+            <ul>
+                <li>Secretary B, OGM - Malaybalay City Water District</li>
+                <li>Clerk Processor B, OGM - Malaybalay City Water District</li>
+                <li>Customer Service, CSD - Malaybalay City Water District</li>
+            </ul>
+        </div>
+
+        <h2 id="contact-me">Contact Information</h2>
+        <div class="section-hover">
+            <p> Email: <a href="mailto:mjlsm.official@gmail.com">mjlsm.official@gmail.com</a><span class="glyphicon glyphicon-envelope"></span> </p>
+            <p> Mobile <a href="mailto:mjlsm.official@gmail.com">+63 936-471-5906 </a><span class="glyphicon glyphicon-search"></span> </p>
+        </div>
         </div>
     </div>
+
+    <div class="scroll-to-top" onclick="scrollToTop()"> Go Up
+        <i class="bi bi-heart-fill"></i> <!-- Bootstrap Icons heart icon -->
+    </div> <!-- Bootstrap Icons up-arrow icon -->
+    </div>
+
+    <!-- Add Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    
 </body>
 </html>

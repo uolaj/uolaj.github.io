@@ -1,0 +1,145 @@
+<style>
+body {
+    font-family: 'Century Gothic', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header-image {
+    margin-top: -50px;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.header-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.banner header {
+    text-align: center;
+}
+
+.banner h1 {
+    margin: 0;
+    color: black;
+    font-family: 'Century Gothic', Arial, sans-serif;
+    text-align: center;
+}
+
+.banner {
+    background-image: url("https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    text-align: center;
+}
+
+.banner nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.banner nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.banner nav li {
+    margin-left: 20px;
+}
+
+.banner nav a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Update the hover background color to pastel yellow */
+.banner nav a:hover {
+    background-color: #ffff99; /* Pastel yellow */
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: bisque;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: purple;
+    font-family: 'Century Gothic', Arial, sans-serif;
+}
+
+p {
+    line-height: 1.6;
+    color: #333;
+}
+
+ul {
+    list-style-type: disc;
+    color: #333;
+}
+
+a {
+    color: #0074cc;
+    text-decoration: none;
+}
+
+/* Work Experience section */
+.experience {
+    margin-top: 20px;
+}
+
+.experience h3 {
+    color: #f5f385;
+}
+
+.experience p {
+    font-style: italic;
+}
+
+/* Photo style */
+.profile-photo {
+    max-width: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+/* Styling for sections with hover effect */
+.section-hover {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 20px auto;
+    max-width: 90%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.section-hover:hover {
+    background-color: #ffff99; /* Pastel yellow on hover */
+    cursor: pointer;
+    transform: scale(1.02);
+}
+</style>
