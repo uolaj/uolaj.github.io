@@ -12,6 +12,23 @@
             padding: 0;
         }
 
+        .header-image{
+        margin-top: -50px;
+        text-align: center;
+        margin-bottom: 20px;
+        position: relative; /* or position: absolute; */
+        z-index: 1; /
+        }
+
+        .header-image img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+
+
+        }
+
         .banner header {
          /*   background-color: #0074cc;*/
          /*   color: #fff; */
@@ -25,7 +42,7 @@
         }
 
         .banner {
-            background-image: url("https://images.unsplash.com/photo-1464802686167-b939a6910659?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1750&q=80");
+            background-image: url("https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80");
             display: flex;
             align-items: center;
             justify-content: center; /* Center horizontally */
@@ -33,7 +50,7 @@
             position: relative;
             background-size: cover;
             background-position: center;
-            padding: 20px; 
+            width: 100%;
             text-align: center; /* Center text horizontally */
         }
 
@@ -52,6 +69,7 @@
             list-style: none;
             margin: 0;
             padding: 0;
+
         }
 
         .banner nav li {
@@ -59,7 +77,7 @@
         }
 
         .banner nav a {
-            color: white;
+            color: black;
             text-decoration: none;
             font-size: 18px;
             padding: 10px;
@@ -68,14 +86,15 @@
         }
 
         .banner nav a:hover {
-            background-color: #cce6ff;
+           /* background-color: #cce6ff;*/
+           background-color: burlywood;
         }
 
         .container {
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #fff;
+            background-color: bisque;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
@@ -150,11 +169,13 @@
 
         
             <h1>MARIA JOSEPHAN LOUISE M. ELI PASCUA</h1>
-          
        
     </div>
 
-   
+    <div class="header-image">
+        <img src="jalou.png" alt="Maria Josephan Louise">
+      </div>
+       
 
     <div class="container">
         <h2>About Me</h2>
@@ -179,9 +200,9 @@
         <ul>
             <b>IT Professional Skills:</b>
                 <ul>
-                    <li>Information Systems Management: Skilled in overseeing and maintaining information systems.</li>
-                    <li>Database Management: Proficient in database administration and SQL.</li>
-                    <li>Software Development: Experienced in software development and programming.</li>
+                    <li>Information Systems Management.</li>
+                    <li>Database Management.</li>
+                    <li>Software Development.</li>
                 </ul>
             
             <b>Secretarial Skills:</b>
